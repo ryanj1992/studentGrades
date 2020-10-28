@@ -1,0 +1,59 @@
+﻿<Window x:Class="Johnson_Ryan_1310903.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddStudent" Height="310" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">First Name</Label>
+        <Label Grid.Row="1" Grid.Column="0">Last Name</Label>
+        <Label Grid.Row="2" Grid.Column="0">Matric Number</Label>
+        <Label Grid.Row="3" Grid.Column="0">Component A</Label>
+        <Label Grid.Row="4" Grid.Column="0">Component B</Label>
+        <Label Grid.Row="5" Grid.Column="0">Component C</Label>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtFirstName" />
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtLastName"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="txtMatricNo"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" Name="txtCompA" Margin="0,0,121,0">
+            <ComboBoxItem Content="A"></ComboBoxItem>
+            <ComboBoxItem Content="B"></ComboBoxItem>
+            <ComboBoxItem Content="C"></ComboBoxItem>
+            <ComboBoxItem Content="D"></ComboBoxItem>
+            <ComboBoxItem Content="E"></ComboBoxItem>
+            <ComboBoxItem Content="F"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Row="4" Grid.Column="1" Name="txtCompB" Margin="0,0,121,0">
+            <ComboBoxItem Content="A"></ComboBoxItem>
+            <ComboBoxItem Content="B"></ComboBoxItem>
+            <ComboBoxItem Content="C"></ComboBoxItem>
+            <ComboBoxItem Content="D"></ComboBoxItem>
+            <ComboBoxItem Content="E"></ComboBoxItem>
+            <ComboBoxItem Content="F"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Row="5" Grid.Column="1" Name="txtCompC" Margin="0,0,121,0">
+            <ComboBoxItem Content="A"></ComboBoxItem>
+            <ComboBoxItem Content="B"></ComboBoxItem>
+            <ComboBoxItem Content="C"></ComboBoxItem>
+            <ComboBoxItem Content="D"></ComboBoxItem>
+            <ComboBoxItem Content="E"></ComboBoxItem>
+            <ComboBoxItem Content="F"></ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Click="OnSubmit">Save</Button>
+        <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Click="OnClear" Content="Clear"/>
+    </Grid>
+</Window>
